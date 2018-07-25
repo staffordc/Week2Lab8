@@ -15,11 +15,29 @@ namespace StudentsInfoArray
             while (Repeat)
             {
                 //infos about students [3 rows matrix]
+                Console.WriteLine("want to hear about students from another dimension? I know of twenty of them. input 1 to 20");
                 string[,] StudentsInformation = new string[,] 
                 {
-                    {"a", "b", "c" },
-                    {"d", "e", "f" },
-                    {"g", "h", "i" },
+                    {"Grimblo Bim", "Puce", "Grimbrew's Brew" },
+                    {"Beefaroni Phoney", "Purple", "Phoney Baloney" },
+                    {"Shmaple Apple", "Red Delicious", "Apple Thumpkin Gang" },
+                    {"Figgy Pudding", "Goldenrod", "Gromblo's Brew" },
+                    {"Ham Hocks", "Gold", "Apple Thumpkin Ale" },
+                    {"Little Debbie", "Fire Brick", "Gromb's Cookie Stout" },
+                    {"Hanonymus Bosch", "Peach Puff", "Gromb's Peach Delight" },
+                    {"Billy billy von Billy", "Deep Sky Blue", "Blue Gold Apple" },
+                    {"Fitzhugh Nicely", "Pale Turquoise", "Skrumpkin Lager" },
+                    {"Bob the Beggar", "Plum", "Skrumpkin Ale" },
+                    {"Half-wit Henry", "Medium Sea Green", "Skrumpkin Stout" },
+                    {"Legs Akimbo", "Beige", "Grimbrew's Brew: Gold" },
+                    {"Rott Weiler", "Green", "Grimbrew's St. Paddy's Day Cider" },
+                    {"Tito Watts", "Chartreuse", "Gromblo's Ale" },
+                    {"Henry Bo Benry", "Medium Purple", "Gromblo's Stout" },
+                    {"John Silva", "Tan", "Gromblo's Pommblo Stout" },
+                    {"Gnome Johnson", "Orange", "Gromblo's Orange Saison" },
+                    {"Jerome Smonson", "Dark Green", "Gromblo's Light Ale" },
+                    {"Som Wattson", "Green Yellow", "Gromblo's Lemon Shandy" },
+                    {"Ratt Chatterson", "Burly Wood", "Grimbrew's Yummy Scrumptious Stout" },
                 };
                 
                 //student nums; name out
@@ -77,7 +95,7 @@ namespace StudentsInfoArray
 
         static bool Retry()
         {
-            Console.WriteLine("\n continue? yes or no please.");
+            Console.WriteLine("\ncontinue? yes or no please.");
             String Answer = Console.ReadLine().ToUpper();
 
             if (Answer == "Y" || Answer == "YES")
@@ -90,7 +108,7 @@ namespace StudentsInfoArray
             }
             else
             {
-            Console.WriteLine("\n i don't know that. please input y or n.");
+            Console.WriteLine("\ni don't know that. please input y or n.");
             return Retry();
             }
         }
